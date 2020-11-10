@@ -1,0 +1,15 @@
+function isLeap(year) {
+var conditionOne = year % 4;
+var conditionTwo = year % 100;
+var conditionThree = year % 400;
+     if (conditionOne !== 0) {
+        return "Not leap year.";
+    }
+    if (conditionOne === 0 || conditionOne === 0 && conditionTwo === 0){
+        return "Leap year.";
+    }
+    if (conditionOne === 0 && conditionTwo !== 0 && conditionThree === 0) {
+        return "Leap year.";
+    } else {
+        return "Not leap year.";
+}
